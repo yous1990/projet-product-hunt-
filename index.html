@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>projet-hunt</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+  <style>
+  .haut{
+    height: 70px;
+    margin-left: 10px;
+  }
+  .lien{
+    display: flex;
+  }
+  .lien1{
+    float: left;
+    margin-left: 10px;
+  }
+  .comment img{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%
+  }
+  .comment{
+    margin-left: 15px;
+  }
+  #commentaire{width: 200px; height: 70px}
+  .email{margin-left:10px;color:grey}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open</button>
+
+    <!-- Modal Swipebale-->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!--entête du modal -->
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="img-entete-y"><img src="img/project.jpeg" class="img-responsive"/></div>
+            <div class="title-y">
+              <h1 class="modal-title">Swipeable Panorama for Instagram</h1>
+              <br/> <h2>Share 360 panoramas on Instagram</h2>
+              <img src="img/apple-signe.png"/>
+              <!-- menu pour les boutons  -->
+              <div class="button-menu-y">
+                <button type="button" class="btn btn-default" id="button-getit">GET IT</button>
+                <button type="button" class="btn btn-default" id="button-count">&#9650; 157</button>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-body">
+            <!-- <p>This is a large modal.</p> -->
+            <div class="col-md-sm-xs commentaires">
+              <div class="row">
+
+                <div class="col-md-sm-xs-offset-1 col-md-sm-xs-10  haut">
+
+
+                </div>
+
+              </div>
+
+              <div class="col-md-sm-xs comment">
+              <p>  Laisser vos commentaires  <input id="commentaire"type="text" name="" value=""></p>
+              <button style="margin-left:230px" type="button" name="button"> Envoyer</button>
+                <hr>
+                <h3>Discussion</h3>
+                <p><img src="img/user2.jpeg" class="img-responsive"><span class="email" ><a href="#">beng-Lang <br> @alonviten · Co-founder of LabWorm.com</a> </span><br> Hello Product Hunt! I’m Alon, one of the makers of LabWorm. </p>
+                <p>Write “You owe me $20” and Messenger will suggest you use its payments feature. <br>If someone says “goodbye,” Messenger will recommend a “bye-bye” GIF. That’s how Facebook’s new M Suggestions work.
+                </p>
+                <div class="lien">
+                  <div class="lien1"><a href="#"> <i class="fa fa-caret-up" aria-hidden="true"></i> upvote </a></div>
+                  <div class="lien1"><a href="#"> f SHARE  </a></div>
+                  <div class="lien1"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></a></i>
+                    twitter</div>
+                    <div class="lien1"> heure du comment </div>
+                  </div>
+                  <p><img src="img/user.jpeg" class="img-responsive"><span class="email"><a href="#">Roy Granit <br> @jonorberg · CEO, Pacemaker Music AB</a> </span><br> Hello Product Hunt! I’m Alon, one of the makers of LabWorm. </p>
+                  <p>Write “You owe me $20” and Messenger will suggest you use its payments feature. <br>If someone says “goodbye,” Messenger will recommend a “bye-bye” GIF. That’s how Facebook’s new M Suggestions work.
+                  </p>
+                  <div class="lien">
+                    <div class="lien1"> <a href="#"> <i class="fa fa-caret-down" aria-hidden="true"></i> downvote </a></div>
+                    <div class="lien1"> <a href="#"> <span>f SHARE </span> </a></div>
+                    <div class="lien1"> <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i>
+                      twitter </a></div>
+                      <div class="lien1"><a href="#"> heure du comment </a></div>
+
+                </div>
+                <!-- <button id="show" type="button" name="button">Show all comments</button> -->
+              </div>
+
+            </div>
+            <!-- end large modal -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  </html>
